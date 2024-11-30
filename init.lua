@@ -18,9 +18,10 @@ vim.opt.rtp:prepend(lazypath)
 -- Usage: { import = "plugins.treesitter" },
 require("lazy").setup({
   spec = {
+	{ import = "plugins.indentation"},
 	{ import = "plugins.colorscheme"},
-	{ import = "plugins.telescope"},
 	{ import = "plugins.treesitter"},
+	{ import = "plugins.telescope"},
 	{ import = "plugins.neotree"},
 	{ import = "plugins.lualine"},
   },
