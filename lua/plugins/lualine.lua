@@ -4,7 +4,10 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'horizon',
+				theme = require('lualine-theme').theme(),
+				-- Removes separators
+				section_separators = {'', ''},
+				component_separators = {'', ''},
 			}
 		}
 	end
