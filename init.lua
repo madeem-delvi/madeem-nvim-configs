@@ -15,15 +15,19 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Personal settings not defined by plugins
+require("settings")
+
 -- Usage: { import = "plugins.treesitter" },
 require("lazy").setup({
   spec = {
-	{ import = "plugins.indentation"},
-	{ import = "plugins.colorscheme"},
-	{ import = "plugins.treesitter"},
-	{ import = "plugins.telescope"},
-	{ import = "plugins.neotree"},
-	{ import = "plugins.lualine"},
+	{ import = "plugins.lsp-config" },
+	{ import = "plugins.indentation" },
+	{ import = "plugins.colorscheme" },
+	{ import = "plugins.treesitter" },
+	{ import = "plugins.telescope" },
+	{ import = "plugins.neotree" },
+	{ import = "plugins.lualine" },
   },
   checker = { enabled = true },
 })
