@@ -16,7 +16,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Personal settings not defined by plugins
-require("editor-config")
+require("settings")
 
 -- Usage: { import = "plugins.treesitter" },
 require("lazy").setup({
