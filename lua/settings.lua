@@ -1,6 +1,8 @@
+-- Indentation Behavior
 vim.cmd("set autoindent")
 vim.cmd("set smartindent")
 vim.cmd("set cindent")
+
 -- Leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
