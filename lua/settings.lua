@@ -2,6 +2,10 @@
 vim.cmd("set autoindent")
 vim.cmd("set smartindent")
 vim.cmd("set cindent")
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 
 -- Leader key
 vim.g.mapleader = " "
