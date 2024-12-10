@@ -4,10 +4,9 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = require('lualine-theme').theme(),
-				-- Removes separators
-				section_separators = {'', ''},
-				component_separators = {'', ''},
+				component_separators = '',
+				section_separators = '',
+				disabled_filetypes = { 'neo-tree' }
 			}
 		}
 	end
