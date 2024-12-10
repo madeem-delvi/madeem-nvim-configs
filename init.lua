@@ -21,6 +21,7 @@ require("settings")
 -- Usage: { import = "plugins.treesitter" },
 require("lazy").setup({
   spec = {
+  { import = "plugins.none-ls" },
 	{ import = "plugins.lsp-config" },
 	{ import = "plugins.indentation" },
 	{ import = "plugins.colorscheme" },

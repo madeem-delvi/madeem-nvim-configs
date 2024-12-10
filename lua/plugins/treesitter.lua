@@ -5,7 +5,6 @@ return {
 		-- Sets up nvim-treesitter
 		local ts_config = require("nvim-treesitter.configs")
 		ts_config.setup({
-			ensure_installed = {"c", "lua", "vim", "javascript"},
       auto_install = true,
 			highlight = {
 				enable = true,
