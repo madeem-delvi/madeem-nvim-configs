@@ -6,6 +6,7 @@ return {
 			options = {
 				component_separators = '',
 				section_separators = '',
+        theme = 'tundra',
 				disabled_filetypes = { 'neo-tree' }
 			}
 		}
