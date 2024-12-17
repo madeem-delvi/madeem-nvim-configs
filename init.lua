@@ -21,6 +21,8 @@ require("settings")
 -- Usage: { import = "plugins.treesitter" },
 require("lazy").setup({
   spec = {
+  { import = "plugins.vim-test" },
+  { import = "plugins.tmux-nav" },
   { import = "plugins.completion" },
   { import = "plugins.none-ls" },
 	{ import = "plugins.lsp-config" },
